@@ -2,6 +2,9 @@ import random
 import os
 from openai import OpenAI
 import time
+from dotenv import load_dotenv
+
+load_dotenv()
 
 os.environ["HTTP_PROXY"] = "http://127.0.0.1:7890"
 os.environ["HTTPS_PROXY"] = "http://127.0.0.1:7890"
