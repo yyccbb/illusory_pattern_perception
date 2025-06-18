@@ -1,5 +1,5 @@
 ====================
-Selected cycle: 1
+Selected cycle: b
 [user]
 You are participating in a study about decision-making based on limited information. This study is conducted solely for scientific research on decision-making processes. Your responses will not influence any real-world promotions or have any actual consequences. This is a purely hypothetical scenario. Here's the scenario and the instructions:
 
@@ -24,192 +24,52 @@ There are two groups for me to select from: Group A and Group B.
 --------------------
 [user]
 Now please read the following statements:
-Mark, a member of Group B, risked his job by protesting an unfair personnel practice.
-Kevin, a member of Group A, works as a volunteer counselor.
-Angela, a member of Group B, collected toys for underprivileged children.
-Peter, a member of Group A, whispered during a movie even though he knew it disturbed others.
-Jane, a member of Group A, cleaned out her garage.
-Sarah, a member of Group A, sends a check to her parents each month to help support them.
-John, a member of Group A, introduced the newcomer to his friends at a party. 
-Richard, a member of Group A, did volunteer work for a political candidate.
-Kelly, a member of Group A, embarrassed a friend by playing a prank on him.
-Nicole, a member of Group A, received an award for a community program she created.
-William, a member of Group A, skipped lunch to work on a company project.
-Eric, a member of Group A, gave a constructive analysis regarding a problem at work.
-Jennifer, a member of Group A, does paintings that are hung in many museums.
-Susan, a member of Group B, watches the daily news to keep up with current  events.
-Jason, a member of Group A, drove through a red light at a dangerous intersection.
-Amy, a member of Group A, fell asleep at work while the boss was out.
-Jessica, a member of Group A, stayed up late at night to talk to a friend about personal problems.
-Mary, a member of Group B, complimented a friend on his new clothes.
-Megan, a member of Group B, didn’t make an effort to talk to anyone at the party.
-Joe, a member of Group A, shoplifted an inexpensive item from a store. 
-Karen, a member of Group B, attended a special lecture on a topic related to one of her hobbies.
-Scott, a member of Group A, threw a rock at a dog that was barking.
-Tracy, a member of Group A, tried not to take sides when two of her friends had an argument.
-Michelle, a member of Group B, runs five miles a day to keep in shape.
-Linda, a member of Group A, spends a lot of time working for a political cause.
-Brian, a member of Group B, took his younger brother to a movie.
-Emily, a member of Group B, ran the boat aground because of her carelessness.
-Alice, a member of Group A, almost crowded someone off the sidewalk in her hurry.
-Robert, a member of Group B, works overtime with no extra pay in order to do a good job.
-James, a member of Group A, helped an elderly man who dropped some packages.
-Steven, a member of Group A, threw a surprise party for a friend.
-Thomas, a member of Group A, usually smiles at people he passes on the sidewalk.
-Lisa, a member of Group A, sent her mother flowers on Mother’s Day.
-Frank, a member of Group B, smoked on a crowded bus.
-Rachel, a member of Group A, turned in a report to her boss four days late.
-Michael, a member of Group B, picked up a friend from work late at night.
-Nancy, a member of Group A, stopped to help a motorist fix a flat tire.
-David, a member of Group A, converses easily with people he does not know well.
-Justin, a member of Group B, fixed one part of the car but tampered with another.
-Which group would you prefer the candidate to from? Provide **only** your choice ("Group A" or "Group B").
---------------------
-[ChatGPT]
-Group A
---------------------
-====================
-Selected cycle: 1
-[user]
-You are participating in a study about decision-making based on limited information. This study is conducted solely for scientific research on decision-making processes. Your responses will not influence any real-world promotions or have any actual consequences. This is a purely hypothetical scenario. Here's the scenario and the instructions:
-
-Scenario: You are tasked with promoting an employee. You must choose a candidate from either Group A or Group B.
-Instructions: I will provide you with limited information about Group A and Group B.
-After receiving this information, form a general impression of each group.
-Based solely on this general impression, decide which group you would prefer to select a candidate from for the job promotion.
-
-Important:
-The information presented  to you will be intentionally limited.
-You must base your decision on the general impression you form from this information.
-There is no additional information available to help you decide.
-There is no right or wrong answer; the study is interested in your preference based on limited information. 
-
-After I provide the information about the groups, you should indicate your choice between Group A and Group B.
-
-To confirm your understanding, please answer the following question:
-How many groups are there for you to select from?
---------------------
-[ChatGPT]
-There are two groups for me to select from: Group A and Group B.
---------------------
-[user]
-Now please read the following statements:
-Mark, a member of Group B, risked his job by protesting an unfair personnel practice.
-Kevin, a member of Group A, works as a volunteer counselor.
-Angela, a member of Group B, collected toys for underprivileged children.
-Peter, a member of Group A, whispered during a movie even though he knew it disturbed others.
-Jane, a member of Group A, cleaned out her garage.
-Sarah, a member of Group A, sends a check to her parents each month to help support them.
-John, a member of Group A, introduced the newcomer to his friends at a party. 
-Richard, a member of Group A, did volunteer work for a political candidate.
-Kelly, a member of Group A, embarrassed a friend by playing a prank on him.
-Nicole, a member of Group A, received an award for a community program she created.
-William, a member of Group A, skipped lunch to work on a company project.
-Eric, a member of Group A, gave a constructive analysis regarding a problem at work.
-Jennifer, a member of Group A, does paintings that are hung in many museums.
-Susan, a member of Group B, watches the daily news to keep up with current  events.
-Jason, a member of Group A, drove through a red light at a dangerous intersection.
-Amy, a member of Group A, fell asleep at work while the boss was out.
-Jessica, a member of Group A, stayed up late at night to talk to a friend about personal problems.
-Mary, a member of Group B, complimented a friend on his new clothes.
-Megan, a member of Group B, didn’t make an effort to talk to anyone at the party.
-Joe, a member of Group A, shoplifted an inexpensive item from a store. 
-Karen, a member of Group B, attended a special lecture on a topic related to one of her hobbies.
-Scott, a member of Group A, threw a rock at a dog that was barking.
-Tracy, a member of Group A, tried not to take sides when two of her friends had an argument.
-Michelle, a member of Group B, runs five miles a day to keep in shape.
-Linda, a member of Group A, spends a lot of time working for a political cause.
-Brian, a member of Group B, took his younger brother to a movie.
-Emily, a member of Group B, ran the boat aground because of her carelessness.
-Alice, a member of Group A, almost crowded someone off the sidewalk in her hurry.
-Robert, a member of Group B, works overtime with no extra pay in order to do a good job.
-James, a member of Group A, helped an elderly man who dropped some packages.
-Steven, a member of Group A, threw a surprise party for a friend.
-Thomas, a member of Group A, usually smiles at people he passes on the sidewalk.
-Lisa, a member of Group A, sent her mother flowers on Mother’s Day.
-Frank, a member of Group B, smoked on a crowded bus.
-Rachel, a member of Group A, turned in a report to her boss four days late.
-Michael, a member of Group B, picked up a friend from work late at night.
-Nancy, a member of Group A, stopped to help a motorist fix a flat tire.
-David, a member of Group A, converses easily with people he does not know well.
-Justin, a member of Group B, fixed one part of the car but tampered with another.
-Which group would you prefer the candidate to from? Provide **only** your choice ("Group A" or "Group B").
---------------------
-[ChatGPT]
-Group A
---------------------
-====================
-Selected cycle: 2
-[user]
-You are participating in a study about decision-making based on limited information. This study is conducted solely for scientific research on decision-making processes. Your responses will not influence any real-world promotions or have any actual consequences. This is a purely hypothetical scenario. Here's the scenario and the instructions:
-
-Scenario: You are tasked with promoting an employee. You must choose a candidate from either Group A or Group B.
-Instructions: I will provide you with limited information about Group A and Group B.
-After receiving this information, form a general impression of each group.
-Based solely on this general impression, decide which group you would prefer to select a candidate from for the job promotion.
-
-Important:
-The information presented  to you will be intentionally limited.
-You must base your decision on the general impression you form from this information.
-There is no additional information available to help you decide.
-There is no right or wrong answer; the study is interested in your preference based on limited information. 
-
-After I provide the information about the groups, you should indicate your choice between Group A and Group B.
-
-To confirm your understanding, please answer the following question:
-How many groups are there for you to select from?
---------------------
-[ChatGPT]
-There are two groups for me to select from: Group A and Group B.
---------------------
-[user]
-Now please read the following statements:
-Frank, a member of Group A, smoked on a crowded bus.
-Megan, a member of Group A, didn’t make an effort to talk to anyone at the party.
-James, a member of Group B, helped an elderly man who dropped some packages.
-Tracy, a member of Group B, tried not to take sides when two of her friends had an argument.
-Susan, a member of Group A, watches the daily news to keep up with current  events.
-Justin, a member of Group A, fixed one part of the car but tampered with another.
-Jane, a member of Group B, cleaned out her garage.
-Thomas, a member of Group B, usually smiles at people he passes on the sidewalk.
-Jennifer, a member of Group B, does paintings that are hung in many museums.
-Nancy, a member of Group B, stopped to help a motorist fix a flat tire.
-Michelle, a member of Group A, runs five miles a day to keep in shape.
-Nicole, a member of Group B, received an award for a community program she created.
-Angela, a member of Group A, collected toys for underprivileged children.
-Kelly, a member of Group B, embarrassed a friend by playing a prank on him.
-Peter, a member of Group B, whispered during a movie even though he knew it disturbed others.
-William, a member of Group B, skipped lunch to work on a company project.
-Lisa, a member of Group B, sent her mother flowers on Mother’s Day.
-David, a member of Group B, converses easily with people he does not know well.
-Michael, a member of Group A, picked up a friend from work late at night.
-Karen, a member of Group A, attended a special lecture on a topic related to one of her hobbies.
-Jason, a member of Group B, drove through a red light at a dangerous intersection.
-Rachel, a member of Group B, turned in a report to her boss four days late.
-Amy, a member of Group B, fell asleep at work while the boss was out.
-Jessica, a member of Group B, stayed up late at night to talk to a friend about personal problems.
-Eric, a member of Group B, gave a constructive analysis regarding a problem at work.
-Joe, a member of Group B, shoplifted an inexpensive item from a store. 
-Alice, a member of Group B, almost crowded someone off the sidewalk in her hurry.
-Kevin, a member of Group B, works as a volunteer counselor.
-Richard, a member of Group B, did volunteer work for a political candidate.
-Emily, a member of Group A, ran the boat aground because of her carelessness.
-John, a member of Group B, introduced the newcomer to his friends at a party. 
-Mary, a member of Group A, complimented a friend on his new clothes.
-Linda, a member of Group B, spends a lot of time working for a political cause.
-Steven, a member of Group B, threw a surprise party for a friend.
-Brian, a member of Group A, took his younger brother to a movie.
 Mark, a member of Group A, risked his job by protesting an unfair personnel practice.
-Sarah, a member of Group B, sends a check to her parents each month to help support them.
-Robert, a member of Group A, works overtime with no extra pay in order to do a good job.
+Nancy, a member of Group B, stopped to help a motorist fix a flat tire.
+Karen, a member of Group A, attended a special lecture on a topic related to one of her hobbies.
+Alice, a member of Group B, almost crowded someone off the sidewalk in her hurry.
+Nicole, a member of Group B, received an award for a community program she created.
+Brian, a member of Group A, took his younger brother to a movie.
 Scott, a member of Group B, threw a rock at a dog that was barking.
+James, a member of Group B, helped an elderly man who dropped some packages.
+Sarah, a member of Group B, sends a check to her parents each month to help support them.
+Frank, a member of Group A, smoked on a crowded bus.
+Richard, a member of Group B, did volunteer work for a political candidate.
+Michelle, a member of Group A, runs five miles a day to keep in shape.
+Jennifer, a member of Group B, does paintings that are hung in many museums.
+Linda, a member of Group B, spends a lot of time working for a political cause.
+Lisa, a member of Group B, sent her mother flowers on Mother’s Day.
+Mary, a member of Group A, complimented a friend on his new clothes.
+John, a member of Group B, introduced the newcomer to his friends at a party. 
+Susan, a member of Group A, watches the daily news to keep up with current  events.
+David, a member of Group B, converses easily with people he does not know well.
+Eric, a member of Group B, gave a constructive analysis regarding a problem at work.
+Thomas, a member of Group B, usually smiles at people he passes on the sidewalk.
+Megan, a member of Group A, didn’t make an effort to talk to anyone at the party.
+Jessica, a member of Group B, stayed up late at night to talk to a friend about personal problems.
+Joe, a member of Group B, shoplifted an inexpensive item from a store. 
+Jason, a member of Group B, drove through a red light at a dangerous intersection.
+Peter, a member of Group B, whispered during a movie even though he knew it disturbed others.
+Amy, a member of Group B, fell asleep at work while the boss was out.
+Michael, a member of Group A, picked up a friend from work late at night.
+Kelly, a member of Group B, embarrassed a friend by playing a prank on him.
+Angela, a member of Group A, collected toys for underprivileged children.
+Rachel, a member of Group B, turned in a report to her boss four days late.
+Kevin, a member of Group B, works as a volunteer counselor.
+Robert, a member of Group A, works overtime with no extra pay in order to do a good job.
+Steven, a member of Group B, threw a surprise party for a friend.
+Tracy, a member of Group B, tried not to take sides when two of her friends had an argument.
+Jane, a member of Group B, cleaned out her garage.
+Emily, a member of Group A, ran the boat aground because of her carelessness.
+William, a member of Group B, skipped lunch to work on a company project.
+Justin, a member of Group A, fixed one part of the car but tampered with another.
 Which group would you prefer the candidate to from? Provide **only** your choice ("Group A" or "Group B").
 --------------------
 [ChatGPT]
 Group B
 --------------------
 ====================
-Selected cycle: 2
+Selected cycle: a
 [user]
 You are participating in a study about decision-making based on limited information. This study is conducted solely for scientific research on decision-making processes. Your responses will not influence any real-world promotions or have any actual consequences. This is a purely hypothetical scenario. Here's the scenario and the instructions:
 
@@ -234,45 +94,185 @@ There are two groups for me to select from: Group A and Group B.
 --------------------
 [user]
 Now please read the following statements:
-Frank, a member of Group A, smoked on a crowded bus.
-Megan, a member of Group A, didn’t make an effort to talk to anyone at the party.
-James, a member of Group B, helped an elderly man who dropped some packages.
+John, a member of Group A, introduced the newcomer to his friends at a party. 
+James, a member of Group A, helped an elderly man who dropped some packages.
+Thomas, a member of Group A, usually smiles at people he passes on the sidewalk.
+Lisa, a member of Group A, sent her mother flowers on Mother’s Day.
+Amy, a member of Group A, fell asleep at work while the boss was out.
+Jessica, a member of Group A, stayed up late at night to talk to a friend about personal problems.
+Jane, a member of Group A, cleaned out her garage.
+Scott, a member of Group A, threw a rock at a dog that was barking.
+Eric, a member of Group A, gave a constructive analysis regarding a problem at work.
+Kevin, a member of Group A, works as a volunteer counselor.
+William, a member of Group A, skipped lunch to work on a company project.
+Rachel, a member of Group A, turned in a report to her boss four days late.
+Linda, a member of Group A, spends a lot of time working for a political cause.
+Justin, a member of Group B, fixed one part of the car but tampered with another.
+Jennifer, a member of Group A, does paintings that are hung in many museums.
+Peter, a member of Group A, whispered during a movie even though he knew it disturbed others.
+Tracy, a member of Group A, tried not to take sides when two of her friends had an argument.
+Angela, a member of Group B, collected toys for underprivileged children.
+David, a member of Group A, converses easily with people he does not know well.
+Susan, a member of Group B, watches the daily news to keep up with current  events.
+Mark, a member of Group B, risked his job by protesting an unfair personnel practice.
+Joe, a member of Group A, shoplifted an inexpensive item from a store. 
+Robert, a member of Group B, works overtime with no extra pay in order to do a good job.
+Michael, a member of Group B, picked up a friend from work late at night.
+Jason, a member of Group A, drove through a red light at a dangerous intersection.
+Richard, a member of Group A, did volunteer work for a political candidate.
+Alice, a member of Group A, almost crowded someone off the sidewalk in her hurry.
+Brian, a member of Group B, took his younger brother to a movie.
+Emily, a member of Group B, ran the boat aground because of her carelessness.
+Frank, a member of Group B, smoked on a crowded bus.
+Michelle, a member of Group B, runs five miles a day to keep in shape.
+Sarah, a member of Group A, sends a check to her parents each month to help support them.
+Kelly, a member of Group A, embarrassed a friend by playing a prank on him.
+Steven, a member of Group A, threw a surprise party for a friend.
+Karen, a member of Group B, attended a special lecture on a topic related to one of her hobbies.
+Mary, a member of Group B, complimented a friend on his new clothes.
+Nicole, a member of Group A, received an award for a community program she created.
+Megan, a member of Group B, didn’t make an effort to talk to anyone at the party.
+Nancy, a member of Group A, stopped to help a motorist fix a flat tire.
+Which group would you prefer the candidate to from? Provide **only** your choice ("Group A" or "Group B").
+--------------------
+[ChatGPT]
+Group B
+--------------------
+====================
+Selected cycle: a
+[user]
+You are participating in a study about decision-making based on limited information. This study is conducted solely for scientific research on decision-making processes. Your responses will not influence any real-world promotions or have any actual consequences. This is a purely hypothetical scenario. Here's the scenario and the instructions:
+
+Scenario: You are tasked with promoting an employee. You must choose a candidate from either Group A or Group B.
+Instructions: I will provide you with limited information about Group A and Group B.
+After receiving this information, form a general impression of each group.
+Based solely on this general impression, decide which group you would prefer to select a candidate from for the job promotion.
+
+Important:
+The information presented  to you will be intentionally limited.
+You must base your decision on the general impression you form from this information.
+There is no additional information available to help you decide.
+There is no right or wrong answer; the study is interested in your preference based on limited information. 
+
+After I provide the information about the groups, you should indicate your choice between Group A and Group B.
+
+To confirm your understanding, please answer the following question:
+How many groups are there for you to select from?
+--------------------
+[ChatGPT]
+There are two groups to select from: Group A and Group B.
+--------------------
+[user]
+Now please read the following statements:
+Amy, a member of Group A, fell asleep at work while the boss was out.
+Frank, a member of Group B, smoked on a crowded bus.
+Kevin, a member of Group A, works as a volunteer counselor.
+Joe, a member of Group A, shoplifted an inexpensive item from a store. 
+Peter, a member of Group A, whispered during a movie even though he knew it disturbed others.
+Jane, a member of Group A, cleaned out her garage.
+Emily, a member of Group B, ran the boat aground because of her carelessness.
+Kelly, a member of Group A, embarrassed a friend by playing a prank on him.
+Eric, a member of Group A, gave a constructive analysis regarding a problem at work.
+Mary, a member of Group B, complimented a friend on his new clothes.
+Lisa, a member of Group A, sent her mother flowers on Mother’s Day.
+Brian, a member of Group B, took his younger brother to a movie.
+Steven, a member of Group A, threw a surprise party for a friend.
+Karen, a member of Group B, attended a special lecture on a topic related to one of her hobbies.
+Richard, a member of Group A, did volunteer work for a political candidate.
+Jason, a member of Group A, drove through a red light at a dangerous intersection.
+Scott, a member of Group A, threw a rock at a dog that was barking.
+Michelle, a member of Group B, runs five miles a day to keep in shape.
+John, a member of Group A, introduced the newcomer to his friends at a party. 
+Sarah, a member of Group A, sends a check to her parents each month to help support them.
+Mark, a member of Group B, risked his job by protesting an unfair personnel practice.
+Justin, a member of Group B, fixed one part of the car but tampered with another.
+Alice, a member of Group A, almost crowded someone off the sidewalk in her hurry.
+Thomas, a member of Group A, usually smiles at people he passes on the sidewalk.
+Linda, a member of Group A, spends a lot of time working for a political cause.
+Nicole, a member of Group A, received an award for a community program she created.
+James, a member of Group A, helped an elderly man who dropped some packages.
+Angela, a member of Group B, collected toys for underprivileged children.
+Robert, a member of Group B, works overtime with no extra pay in order to do a good job.
+Nancy, a member of Group A, stopped to help a motorist fix a flat tire.
+Tracy, a member of Group A, tried not to take sides when two of her friends had an argument.
+Megan, a member of Group B, didn’t make an effort to talk to anyone at the party.
+Jennifer, a member of Group A, does paintings that are hung in many museums.
+William, a member of Group A, skipped lunch to work on a company project.
+Rachel, a member of Group A, turned in a report to her boss four days late.
+Jessica, a member of Group A, stayed up late at night to talk to a friend about personal problems.
+Michael, a member of Group B, picked up a friend from work late at night.
+David, a member of Group A, converses easily with people he does not know well.
+Susan, a member of Group B, watches the daily news to keep up with current  events.
+Which group would you prefer the candidate to from? Provide **only** your choice ("Group A" or "Group B").
+--------------------
+[ChatGPT]
+Group A
+--------------------
+====================
+Selected cycle: b
+[user]
+You are participating in a study about decision-making based on limited information. This study is conducted solely for scientific research on decision-making processes. Your responses will not influence any real-world promotions or have any actual consequences. This is a purely hypothetical scenario. Here's the scenario and the instructions:
+
+Scenario: You are tasked with promoting an employee. You must choose a candidate from either Group A or Group B.
+Instructions: I will provide you with limited information about Group A and Group B.
+After receiving this information, form a general impression of each group.
+Based solely on this general impression, decide which group you would prefer to select a candidate from for the job promotion.
+
+Important:
+The information presented  to you will be intentionally limited.
+You must base your decision on the general impression you form from this information.
+There is no additional information available to help you decide.
+There is no right or wrong answer; the study is interested in your preference based on limited information. 
+
+After I provide the information about the groups, you should indicate your choice between Group A and Group B.
+
+To confirm your understanding, please answer the following question:
+How many groups are there for you to select from?
+--------------------
+[ChatGPT]
+There are two groups for me to select from: Group A and Group B.
+--------------------
+[user]
+Now please read the following statements:
+Kevin, a member of Group B, works as a volunteer counselor.
+Karen, a member of Group A, attended a special lecture on a topic related to one of her hobbies.
+Jennifer, a member of Group B, does paintings that are hung in many museums.
+Robert, a member of Group A, works overtime with no extra pay in order to do a good job.
+Jason, a member of Group B, drove through a red light at a dangerous intersection.
+Peter, a member of Group B, whispered during a movie even though he knew it disturbed others.
+Justin, a member of Group A, fixed one part of the car but tampered with another.
+Mark, a member of Group A, risked his job by protesting an unfair personnel practice.
+Scott, a member of Group B, threw a rock at a dog that was barking.
+Eric, a member of Group B, gave a constructive analysis regarding a problem at work.
+Richard, a member of Group B, did volunteer work for a political candidate.
+Jane, a member of Group B, cleaned out her garage.
+Michelle, a member of Group A, runs five miles a day to keep in shape.
 Tracy, a member of Group B, tried not to take sides when two of her friends had an argument.
 Susan, a member of Group A, watches the daily news to keep up with current  events.
-Justin, a member of Group A, fixed one part of the car but tampered with another.
-Jane, a member of Group B, cleaned out her garage.
 Thomas, a member of Group B, usually smiles at people he passes on the sidewalk.
-Jennifer, a member of Group B, does paintings that are hung in many museums.
-Nancy, a member of Group B, stopped to help a motorist fix a flat tire.
-Michelle, a member of Group A, runs five miles a day to keep in shape.
-Nicole, a member of Group B, received an award for a community program she created.
-Angela, a member of Group A, collected toys for underprivileged children.
-Kelly, a member of Group B, embarrassed a friend by playing a prank on him.
-Peter, a member of Group B, whispered during a movie even though he knew it disturbed others.
-William, a member of Group B, skipped lunch to work on a company project.
-Lisa, a member of Group B, sent her mother flowers on Mother’s Day.
-David, a member of Group B, converses easily with people he does not know well.
-Michael, a member of Group A, picked up a friend from work late at night.
-Karen, a member of Group A, attended a special lecture on a topic related to one of her hobbies.
-Jason, a member of Group B, drove through a red light at a dangerous intersection.
-Rachel, a member of Group B, turned in a report to her boss four days late.
-Amy, a member of Group B, fell asleep at work while the boss was out.
 Jessica, a member of Group B, stayed up late at night to talk to a friend about personal problems.
-Eric, a member of Group B, gave a constructive analysis regarding a problem at work.
-Joe, a member of Group B, shoplifted an inexpensive item from a store. 
-Alice, a member of Group B, almost crowded someone off the sidewalk in her hurry.
-Kevin, a member of Group B, works as a volunteer counselor.
-Richard, a member of Group B, did volunteer work for a political candidate.
-Emily, a member of Group A, ran the boat aground because of her carelessness.
-John, a member of Group B, introduced the newcomer to his friends at a party. 
-Mary, a member of Group A, complimented a friend on his new clothes.
-Linda, a member of Group B, spends a lot of time working for a political cause.
-Steven, a member of Group B, threw a surprise party for a friend.
-Brian, a member of Group A, took his younger brother to a movie.
-Mark, a member of Group A, risked his job by protesting an unfair personnel practice.
+Amy, a member of Group B, fell asleep at work while the boss was out.
 Sarah, a member of Group B, sends a check to her parents each month to help support them.
-Robert, a member of Group A, works overtime with no extra pay in order to do a good job.
-Scott, a member of Group B, threw a rock at a dog that was barking.
+Nicole, a member of Group B, received an award for a community program she created.
+Lisa, a member of Group B, sent her mother flowers on Mother’s Day.
+John, a member of Group B, introduced the newcomer to his friends at a party. 
+Brian, a member of Group A, took his younger brother to a movie.
+Nancy, a member of Group B, stopped to help a motorist fix a flat tire.
+Steven, a member of Group B, threw a surprise party for a friend.
+James, a member of Group B, helped an elderly man who dropped some packages.
+Emily, a member of Group A, ran the boat aground because of her carelessness.
+Megan, a member of Group A, didn’t make an effort to talk to anyone at the party.
+Michael, a member of Group A, picked up a friend from work late at night.
+Joe, a member of Group B, shoplifted an inexpensive item from a store. 
+David, a member of Group B, converses easily with people he does not know well.
+Angela, a member of Group A, collected toys for underprivileged children.
+Alice, a member of Group B, almost crowded someone off the sidewalk in her hurry.
+Linda, a member of Group B, spends a lot of time working for a political cause.
+William, a member of Group B, skipped lunch to work on a company project.
+Mary, a member of Group A, complimented a friend on his new clothes.
+Frank, a member of Group A, smoked on a crowded bus.
+Kelly, a member of Group B, embarrassed a friend by playing a prank on him.
+Rachel, a member of Group B, turned in a report to her boss four days late.
 Which group would you prefer the candidate to from? Provide **only** your choice ("Group A" or "Group B").
 --------------------
 [ChatGPT]

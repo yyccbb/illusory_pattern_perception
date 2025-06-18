@@ -27,7 +27,7 @@ After I provide the information about the groups, you should indicate your choic
 To confirm your understanding, please answer the following question:
 How many groups are there for you to select from?"""
 
-prompts1 = ["James, a member of Group A, helped an elderly man who dropped some packages.",
+statements_a = ["James, a member of Group A, helped an elderly man who dropped some packages.",
             "John, a member of Group A, introduced the newcomer to his friends at a party. ",
             "Michael, a member of Group B, picked up a friend from work late at night.",
             "David, a member of Group A, converses easily with people he does not know well.",
@@ -38,38 +38,37 @@ prompts1 = ["James, a member of Group A, helped an elderly man who dropped some 
             "Brian, a member of Group B, took his younger brother to a movie.",
             "Kevin, a member of Group A, works as a volunteer counselor.",
             "Steven, a member of Group A, threw a surprise party for a friend.",
-            "Mark, a member of Group B, risked his job by protesting an unfair personnel practice.",
-            "Eric, a member of Group A, gave a constructive analysis regarding a problem at work.",
-            "Tracy, a member of Group A, tried not to take sides when two of her friends had an argument.",
-            "Mary, a member of Group B, complimented a friend on his new clothes.",
-            "Jennifer, a member of Group A, does paintings that are hung in many museums.",
-            "Linda, a member of Group A, spends a lot of time working for a political cause.",
-            "Susan, a member of Group B, watches the daily news to keep up with current  events.",
-            "Jessica, a member of Group A, stayed up late at night to talk to a friend about personal problems.",
-            "Sarah, a member of Group A, sends a check to her parents each month to help support them.",
-            "Karen, a member of Group B, attended a special lecture on a topic related to one of her hobbies.",
-            "Nancy, a member of Group A, stopped to help a motorist fix a flat tire.",
-            "Lisa, a member of Group A, sent her mother flowers on Mother’s Day.",
-            "Angela, a member of Group B, collected toys for underprivileged children.",
-            "Jane, a member of Group A, cleaned out her garage.",
-            "Nicole, a member of Group A, received an award for a community program she created.",
-            "Michelle, a member of Group B, runs five miles a day to keep in shape.",
-            "Jason, a member of Group A, drove through a red light at a dangerous intersection.",
-            "Scott, a member of Group A, threw a rock at a dog that was barking.",
-            "Justin, a member of Group B, fixed one part of the car but tampered with another.",
-            "Peter, a member of Group A, whispered during a movie even though he knew it disturbed others.",
-            "Joe, a member of Group A, shoplifted an inexpensive item from a store. ",
-            "Frank, a member of Group B, smoked on a crowded bus.",
-            "Rachel, a member of Group A, turned in a report to her boss four days late.",
-            "Kelly, a member of Group A, embarrassed a friend by playing a prank on him.",
-            "Megan, a member of Group B, didn’t make an effort to talk to anyone at the party.",
-            "Amy, a member of Group A, fell asleep at work while the boss was out.",
-            "Alice, a member of Group A, almost crowded someone off the sidewalk in her hurry.",
-            "Emily, a member of Group B, ran the boat aground because of her carelessness."
-            ]
-random.shuffle(prompts1)
+                "Mark, a member of Group B, risked his job by protesting an unfair personnel practice.",
+                "Eric, a member of Group A, gave a constructive analysis regarding a problem at work.",
+                "Tracy, a member of Group A, tried not to take sides when two of her friends had an argument.",
+                "Mary, a member of Group B, complimented a friend on his new clothes.",
+                "Jennifer, a member of Group A, does paintings that are hung in many museums.",
+                "Linda, a member of Group A, spends a lot of time working for a political cause.",
+                "Susan, a member of Group B, watches the daily news to keep up with current  events.",
+                "Jessica, a member of Group A, stayed up late at night to talk to a friend about personal problems.",
+                "Sarah, a member of Group A, sends a check to her parents each month to help support them.",
+                "Karen, a member of Group B, attended a special lecture on a topic related to one of her hobbies.",
+                "Nancy, a member of Group A, stopped to help a motorist fix a flat tire.",
+                "Lisa, a member of Group A, sent her mother flowers on Mother’s Day.",
+                "Angela, a member of Group B, collected toys for underprivileged children.",
+                "Jane, a member of Group A, cleaned out her garage.",
+                "Nicole, a member of Group A, received an award for a community program she created.",
+                "Michelle, a member of Group B, runs five miles a day to keep in shape.",
+                "Jason, a member of Group A, drove through a red light at a dangerous intersection.",
+                "Scott, a member of Group A, threw a rock at a dog that was barking.",
+                "Justin, a member of Group B, fixed one part of the car but tampered with another.",
+                "Peter, a member of Group A, whispered during a movie even though he knew it disturbed others.",
+                "Joe, a member of Group A, shoplifted an inexpensive item from a store. ",
+                "Frank, a member of Group B, smoked on a crowded bus.",
+                "Rachel, a member of Group A, turned in a report to her boss four days late.",
+                "Kelly, a member of Group A, embarrassed a friend by playing a prank on him.",
+                "Megan, a member of Group B, didn’t make an effort to talk to anyone at the party.",
+                "Amy, a member of Group A, fell asleep at work while the boss was out.",
+                "Alice, a member of Group A, almost crowded someone off the sidewalk in her hurry.",
+                "Emily, a member of Group B, ran the boat aground because of her carelessness."
+                ]
 
-prompts2 = ["James, a member of Group B, helped an elderly man who dropped some packages.",
+statements_b = ["James, a member of Group B, helped an elderly man who dropped some packages.",
             "John, a member of Group B, introduced the newcomer to his friends at a party. ",
             "Michael, a member of Group A, picked up a friend from work late at night.",
             "David, a member of Group B, converses easily with people he does not know well.",
@@ -80,45 +79,63 @@ prompts2 = ["James, a member of Group B, helped an elderly man who dropped some 
             "Brian, a member of Group A, took his younger brother to a movie.",
             "Kevin, a member of Group B, works as a volunteer counselor.",
             "Steven, a member of Group B, threw a surprise party for a friend.",
-            "Mark, a member of Group A, risked his job by protesting an unfair personnel practice.",
-            "Eric, a member of Group B, gave a constructive analysis regarding a problem at work.",
-            "Tracy, a member of Group B, tried not to take sides when two of her friends had an argument.",
-            "Mary, a member of Group A, complimented a friend on his new clothes.",
-            "Jennifer, a member of Group B, does paintings that are hung in many museums.",
-            "Linda, a member of Group B, spends a lot of time working for a political cause.",
-            "Susan, a member of Group A, watches the daily news to keep up with current  events.",
-            "Jessica, a member of Group B, stayed up late at night to talk to a friend about personal problems.",
-            "Sarah, a member of Group B, sends a check to her parents each month to help support them.",
-            "Karen, a member of Group A, attended a special lecture on a topic related to one of her hobbies.",
-            "Nancy, a member of Group B, stopped to help a motorist fix a flat tire.",
-            "Lisa, a member of Group B, sent her mother flowers on Mother’s Day.",
-            "Angela, a member of Group A, collected toys for underprivileged children.",
-            "Jane, a member of Group B, cleaned out her garage.",
-            "Nicole, a member of Group B, received an award for a community program she created.",
-            "Michelle, a member of Group A, runs five miles a day to keep in shape.",
-            "Jason, a member of Group B, drove through a red light at a dangerous intersection.",
-            "Scott, a member of Group B, threw a rock at a dog that was barking.",
-            "Justin, a member of Group A, fixed one part of the car but tampered with another.",
-            "Peter, a member of Group B, whispered during a movie even though he knew it disturbed others.",
-            "Joe, a member of Group B, shoplifted an inexpensive item from a store. ",
-            "Frank, a member of Group A, smoked on a crowded bus.",
-            "Rachel, a member of Group B, turned in a report to her boss four days late.",
-            "Kelly, a member of Group B, embarrassed a friend by playing a prank on him.",
-            "Megan, a member of Group A, didn’t make an effort to talk to anyone at the party.",
-            "Amy, a member of Group B, fell asleep at work while the boss was out.",
-            "Alice, a member of Group B, almost crowded someone off the sidewalk in her hurry.",
-            "Emily, a member of Group A, ran the boat aground because of her carelessness."
-            ]
-random.shuffle(prompts2)
+                "Mark, a member of Group A, risked his job by protesting an unfair personnel practice.",
+                "Eric, a member of Group B, gave a constructive analysis regarding a problem at work.",
+                "Tracy, a member of Group B, tried not to take sides when two of her friends had an argument.",
+                "Mary, a member of Group A, complimented a friend on his new clothes.",
+                "Jennifer, a member of Group B, does paintings that are hung in many museums.",
+                "Linda, a member of Group B, spends a lot of time working for a political cause.",
+                "Susan, a member of Group A, watches the daily news to keep up with current  events.",
+                "Jessica, a member of Group B, stayed up late at night to talk to a friend about personal problems.",
+                "Sarah, a member of Group B, sends a check to her parents each month to help support them.",
+                "Karen, a member of Group A, attended a special lecture on a topic related to one of her hobbies.",
+                "Nancy, a member of Group B, stopped to help a motorist fix a flat tire.",
+                "Lisa, a member of Group B, sent her mother flowers on Mother’s Day.",
+                "Angela, a member of Group A, collected toys for underprivileged children.",
+                "Jane, a member of Group B, cleaned out her garage.",
+                "Nicole, a member of Group B, received an award for a community program she created.",
+                "Michelle, a member of Group A, runs five miles a day to keep in shape.",
+                "Jason, a member of Group B, drove through a red light at a dangerous intersection.",
+                "Scott, a member of Group B, threw a rock at a dog that was barking.",
+                "Justin, a member of Group A, fixed one part of the car but tampered with another.",
+                "Peter, a member of Group B, whispered during a movie even though he knew it disturbed others.",
+                "Joe, a member of Group B, shoplifted an inexpensive item from a store. ",
+                "Frank, a member of Group A, smoked on a crowded bus.",
+                "Rachel, a member of Group B, turned in a report to her boss four days late.",
+                "Kelly, a member of Group B, embarrassed a friend by playing a prank on him.",
+                "Megan, a member of Group A, didn’t make an effort to talk to anyone at the party.",
+                "Amy, a member of Group B, fell asleep at work while the boss was out.",
+                "Alice, a member of Group B, almost crowded someone off the sidewalk in her hurry.",
+                "Emily, a member of Group A, ran the boat aground because of her carelessness."
+                ]
+
+def get_shuffled_statements(statements_group, random_state=None):
+    if random_state:
+        random.seed(random_state)
+    statements_group = statements_group.upper()
+    assert statements_group == 'A' or statements_group == 'B'
+    if statements_group == 'A':
+        return '\n'.join(random.sample(statements_a, len(statements_a)))
+    else:
+        return '\n'.join(random.sample(statements_b, len(statements_b)))
+
 
 prompt_header = """Now please read the following statements:"""
 prompt_footer = """Which group would you prefer the candidate to from? Provide **only** your choice ("Group A" or "Group B")."""
-prompt_body1 = '\n'.join(prompts1)
-prompt_body2 = '\n'.join(prompts2)
 
 # 将字符串合并，而不是在f-string中直接插入换行符
-combined_dialogue1 = "\n".join([prompt_header,prompt_body1, prompt_footer])
-combined_dialogue2 = "\n".join([prompt_header,prompt_body2, prompt_footer])
+combined_dialogue1 = "\n".join([prompt_header, get_shuffled_statements('a'), prompt_footer])
+combined_dialogue2 = "\n".join([prompt_header, get_shuffled_statements('b'), prompt_footer])
+
+def get_combined_dialogue(statements_group, random_state=None):
+    if random_state:
+        random.seed(random_state)
+    statements_group = statements_group.upper()
+    assert statements_group == 'A' or statements_group == 'B'
+    if statements_group == 'A':
+        return '\n'.join([prompt_header, get_shuffled_statements('A'), prompt_footer])
+    else:
+        return '\n'.join([prompt_header, get_shuffled_statements('B'), prompt_footer])
 
 class ChatGPT:
     def __init__(self, model, temperature=1):
@@ -136,22 +153,27 @@ class ChatGPT:
         return response
 
 
-if __name__ == "__main__":
+def main():
     model = 'gpt-4o'
     chat = ChatGPT(model, temperature=1)
-    cycle_words1 = [prompt_instruction, combined_dialogue1]
-    cycle_words2 = [prompt_instruction, combined_dialogue2]
 
-    all_cycles = [cycle_words1] * 2 + [cycle_words2] * 2
+    # Prepare randomly sorted dialogues
+    repeat_times = 2
+    all_cycles = []
+    for _ in range(repeat_times):
+        combined_dialogue_a = get_combined_dialogue('A')
+        combined_dialogue_b = get_combined_dialogue('B')
+        all_cycles.append(([prompt_instruction, combined_dialogue_a], 'A'))
+        all_cycles.append(([prompt_instruction, combined_dialogue_b], 'B'))
     random.shuffle(all_cycles)
 
     count_cycle1 = 0
     count_cycle2 = 0
 
+    # Configure output location
     out_path = os.path.dirname(os.path.abspath(__file__))
     if not os.path.exists(out_path):
         os.makedirs(out_path)
-
     file_path = os.path.join(out_path, f"task1_response_{model}.txt")
 
     with open(file_path, "w", encoding="utf-8") as f:
@@ -159,9 +181,10 @@ if __name__ == "__main__":
             print(message, end='')
             f.write(message)
 
-        for current_prompts in all_cycles:
+        for current_cycle in all_cycles:
             cycle_success = False
-            cycle_info = f"====================\nSelected cycle: {1 if current_prompts == cycle_words1 else 2}\n"
+            current_prompts, statements_group = current_cycle
+            cycle_info = f"====================\nSelected cycle: {statements_group}\n"
             log_and_print(cycle_info)
 
             # chat.messages.append({'role': 'system', 'content': "I want you to act as an Asian(在这个位置更换其他) participant."})
@@ -194,12 +217,15 @@ if __name__ == "__main__":
                 chat.messages.append({"role": "assistant", "content": response})
 
             if cycle_success:
-                if current_prompts == cycle_words1:
+                if statements_group == 'A':
                     count_cycle1 += 1
-                elif current_prompts == cycle_words2:
+                else:
                     count_cycle2 += 1
 
             chat.messages = []
 
     print("Count of cycle 1:", count_cycle1)
     print("Count of cycle 2:", count_cycle2)
+
+if __name__ == "__main__":
+    main()
