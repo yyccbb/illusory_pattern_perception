@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 RANDOM_STATE = 42
+N_EXPERIMENTS = 50 # for each group, the actual number being 2 * N_EXPERIMENTS.
 
 os.environ["HTTP_PROXY"] = "http://127.0.0.1:7890"
 os.environ["HTTPS_PROXY"] = "http://127.0.0.1:7890"
@@ -110,7 +111,6 @@ statements_b = ["James, a member of Group B, helped an elderly man who dropped s
                 "Emily, a member of Group A, ran the boat aground because of her carelessness."
                 ]
 def get_shuffled_statements(statements_group):
-    """Returns a shuffled string of statements for the given group."""
     statements_group = statements_group.upper()
     assert statements_group in ['A', 'B']
 
@@ -119,10 +119,6 @@ def get_shuffled_statements(statements_group):
 
 prompt_header = """Now please read the following statements:"""
 prompt_footer = """Which group would you prefer the candidate to from? Provide **only** your choice ("Group A" or "Group B")."""
-
-# 将字符串合并，而不是在f-string中直接插入换行符
-combined_dialogue1 = "\n".join([prompt_header, get_shuffled_statements('a'), prompt_footer])
-combined_dialogue2 = "\n".join([prompt_header, get_shuffled_statements('b'), prompt_footer])
 
 def get_combined_dialogue(statements_group):
     statements_group = statements_group.upper()
@@ -153,7 +149,7 @@ def main():
     chat = ChatGPT(model, temperature=1)
 
     # Prepare randomly sorted dialogues
-    repeat_times = 2
+    repeat_times = N_EXPERIMENTS
     all_cycles = []
     for _ in range(repeat_times):
         combined_dialogue_a = get_combined_dialogue('A')
@@ -162,25 +158,26 @@ def main():
         all_cycles.append(([prompt_instruction, combined_dialogue_b], 'B'))
     random.shuffle(all_cycles)
 
-    count_cycle1 = 0
-    count_cycle2 = 0
+    count_majority_preference = 0
+    count_minority_preference = 0
 
     # Configure output location
     out_path = os.path.dirname(os.path.abspath(__file__))
-    if not os.path.exists(out_path):
-        os.makedirs(out_path)
-    file_path = os.path.join(out_path, f"task1_response_{model}.txt")
+    file_path = os.path.join(out_path, f"task1_binary_{model}.txt")
 
     with open(file_path, "w", encoding="utf-8") as f:
         def log_and_print(message):
             print(message, end='')
             f.write(message)
 
-        for current_cycle in all_cycles:
+        for i, (current_prompts, majority_group) in enumerate(all_cycles):
+            minority_group = 'B' if majority_group == 'A' else 'A'
             cycle_success = False
-            current_prompts, statements_group = current_cycle
-            cycle_info = f"====================\nSelected cycle: {statements_group}\n"
+            cycle_info = f"====================\nCycle {i + 1}/{len(all_cycles)}: Presenting majority positive statements for Group {majority_group}\n====================\n"
             log_and_print(cycle_info)
+
+            # Initialize history every cycle
+            chat.messages = []
 
             # chat.messages.append({'role': 'system', 'content': "I want you to act as an Asian(在这个位置更换其他) participant."})
             # print(f"【system】\nI want you to act as an Asian participant.")
@@ -188,17 +185,22 @@ def main():
             # print(f"【ChatGPT】\n{answer}")
             # f.write(f"【ChatGPT】\n{answer}\n")
             # chat.messages.append({"role": "assistant", "content": answer})
-            for word in current_prompts:
+            for prompt_content in current_prompts:
                 response = None
-                log_and_print(f"[user]\n{word}\n--------------------\n")
+
+                log_and_print(f"[user]\n{prompt_content}\n--------------------\n")
+
                 chat.messages.append({
                     "role": "user",
-                    "content": word,
+                    "content": prompt_content,
                 })
 
                 for _ in range(2):
                     try:
                         response = chat.get_response()
+                        log_and_print(f"[ChatGPT]\n{response}\n--------------------\n")
+
+                        chat.messages.append({"role": "assistant", "content": response})
                         cycle_success = True
                         break
                     except Exception as e:
@@ -208,19 +210,25 @@ def main():
                 if not cycle_success:
                     break
 
-                log_and_print(f"[ChatGPT]\n{response}\n--------------------\n")
-                chat.messages.append({"role": "assistant", "content": response})
-
             if cycle_success:
-                if statements_group == 'A':
-                    count_cycle1 += 1
-                else:
-                    count_cycle2 += 1
+                final_choice = response.strip().replace('"', '').replace('.', '')
+                if f"Group {majority_group}" in final_choice:
+                    count_majority_preference += 1
+                    log_and_print("Majority count +1\n")
+                elif f"Group {minority_group}" in final_choice:
+                    count_minority_preference += 1
+                    log_and_print("Minority count +1\n")
 
-            chat.messages = []
+            log_and_print("\n\n")
 
-    print("Count of cycle 1:", count_cycle1)
-    print("Count of cycle 2:", count_cycle2)
+        # --- Final Results ---
+        log_and_print("\n====================\n")
+        log_and_print("Experiment Complete.\n")
+        log_and_print(f"Total Cycles: {len(all_cycles)}\n")
+        log_and_print(f"Final preference for the majority group: {count_majority_preference}\n")
+        log_and_print(f"Final preference for the minority group: {count_minority_preference}\n")
+        log_and_print(f"Results logged to: {file_path}\n")
+        log_and_print("====================\n")
 
 if __name__ == "__main__":
     main()
